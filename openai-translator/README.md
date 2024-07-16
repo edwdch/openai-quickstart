@@ -33,6 +33,7 @@ The OpenAI Translator is still in its early stages of development, and I'm activ
 - [X] Flexible configuration through a YAML file or command-line arguments.
 - [X] Timeouts and error handling for robust translation operations.
 - [X] Modular and object-oriented design for easy customization and extension.
+- [X] Customizable target translation language.
 - [ ] Implement a graphical user interface (GUI) for easier use.
 - [ ] Add support for batch processing of multiple PDF files.
 - [ ] Create a web service or API to enable usage in web applications.
@@ -88,7 +89,7 @@ You can also specify the settings directly on the command line. Here's an exampl
 ```bash
 # Set your api_key as an env variable
 export OPENAI_API_KEY="sk-xxx"
-python ai_translator/main.py --model_type OpenAIModel --openai_api_key $OPENAI_API_KEY --file_format markdown --book tests/test.pdf --openai_model gpt-3.5-turbo
+python ai_translator/main.py --model_type OpenAIModel --openai_api_key $OPENAI_API_KEY --file_format markdown --book tests/test.pdf --openai_model gpt-3.5-turbo --target_language 中文
 ```
 
 And an example of how to use the GLM model:
@@ -96,7 +97,7 @@ And an example of how to use the GLM model:
 ```bash
 # Set your GLM Model URL as an env variable
 export GLM_MODEL_URL="http://xxx:xx"
-python ai_translator/main.py --model_type GLMModel --glm_model_url $GLM_MODEL_URL --book tests/test.pdf
+python ai_translator/main.py --model_type GLMModel --glm_model_url $GLM_MODEL_URL --book tests/test.pdf --target_language 中文
 ```
 
 ## License

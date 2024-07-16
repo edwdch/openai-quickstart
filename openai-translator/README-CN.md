@@ -32,6 +32,7 @@ OpenAI 翻译器目前还处于早期开发阶段，我正在积极地添加更�
 - [X] 通过 YAML 文件或命令行参数灵活配置。
 - [X] 对健壮的翻译操作进行超时和错误处理。
 - [X] 模块化和面向对象的设计，易于定制和扩展。
+- [X] 自定义目标翻译语言。
 - [ ] 实现图形用户界面 (GUI) 以便更易于使用。
 - [ ] 添加对多个 PDF 文件的批处理支持。
 - [ ] 创建一个网络服务或 API，以便在网络应用中使用。
@@ -87,7 +88,7 @@ python ai_translator/main.py
 ```bash
 # 将您的 api_key 设置为环境变量
 export OPENAI_API_KEY="sk-xxx"
-python ai_translator/main.py --model_type OpenAIModel --openai_api_key $OPENAI_API_KEY --file_format markdown --book tests/test.pdf --openai_model gpt-3.5-turbo
+python ai_translator/main.py --model_type OpenAIModel --openai_api_key $OPENAI_API_KEY --file_format markdown --book tests/test.pdf --openai_model gpt-3.5-turbo --target_language 中文
 ```
 
 这是使用 GLM 模型的例子：
@@ -95,7 +96,7 @@ python ai_translator/main.py --model_type OpenAIModel --openai_api_key $OPENAI_A
 ```bash
 # 将您的 GLM 模型 URL 设置为环境变量
 export GLM_MODEL_URL="http://xxx:xx"
-python ai_translator/main.py --model_type GLMModel --glm_model_url $GLM_MODEL_URL --book tests/test.pdf 
+python ai_translator/main.py --model_type GLMModel --glm_model_url $GLM_MODEL_URL --book tests/test.pdf --target_language 中文
 ```
 
 ## 许可证
