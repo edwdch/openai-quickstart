@@ -146,3 +146,14 @@ Django Peng - pjt73651@email.com
 
 项目链接: https://github.com/DjangoPeng/openai-quickstart
 
+## 作业完成情况
+
+### Homework-01
+
+- [x] 1.GPT-4V 的使用 [commit](https://github.com/edwdch/openai-quickstart/commit/ae4355bac9c52edc939d37108a101f478505741e)
+- [x] 2.ai translator 的使用 [commit](https://github.com/edwdch/openai-quickstart/commit/40bbca8e1c9788f2f250c63b875db14833be0718)
+- [x] 3.扩展 langchain chains [commit](https://github.com/edwdch/openai-quickstart/commit/2ffb23cc0d01e5410430040335f016e627ef2776)
+
+### Homework-02
+
+- [x] 1.实战 sales chatbot [commit](https://github.com/edwdch/openai-quickstart/commit/f792a3405311b13932f3bf7c1970dcd9723ea52d)
